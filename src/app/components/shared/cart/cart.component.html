@@ -1,0 +1,13 @@
+<div class="cart">
+  <div class="cart-title">Ваша корзина</div>
+  <div class="cart-subtitle">Стоимость: {{ cartPrice$ | async }}</div>
+  <div class="cart-list">
+    <div class="cart-item" *ngFor="let item of cartItems$ | async">
+      <div class="cart-item-title">{{ item.name }}</div>
+      <div class="cart-item-price">{{ item.price }}</div>
+      <div class="cart-item-controls">
+        <button (click)="removeFromCart(item.id)">Удалить из корзины</button>
+      </div>
+    </div>
+  </div>
+</div>

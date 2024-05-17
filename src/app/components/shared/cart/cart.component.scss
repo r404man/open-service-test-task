@@ -1,0 +1,20 @@
+:host {
+  position: fixed;
+  right: 50px;
+  bottom: 120px;
+}
+
+.cart {
+  border-radius: 6px;
+  border: 1px solid #cecece;
+  padding: 20px 30px;
+  .cart-title {
+    font-size: 20px;
+    font-weight: 500;
+    margin-bottom: 5px;
+  }
+  .cart-subtitle {
+    font-size: 18px;
+    font-weight: 500;
+  }
+}
